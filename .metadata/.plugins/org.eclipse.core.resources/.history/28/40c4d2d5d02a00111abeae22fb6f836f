@@ -1,0 +1,5 @@
+spring.application.name=ValueAnnotationProject01
+
+dcc.ctscanrate=1000
+dcc.mriscanrate=1500
+dcc.ecgprice=1750

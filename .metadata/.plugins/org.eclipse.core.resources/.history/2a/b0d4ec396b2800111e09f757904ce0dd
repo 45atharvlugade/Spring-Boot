@@ -1,0 +1,6 @@
+package com.stars.service;
+
+public interface IEmployeeMgmtService {
+
+	public List<Employee> fetchEmployeeByRole(String role);
+}

@@ -1,0 +1,7 @@
+package com.stars.sbeans;
+
+public class Vehicle {
+
+	
+	private IEngine engine;
+}

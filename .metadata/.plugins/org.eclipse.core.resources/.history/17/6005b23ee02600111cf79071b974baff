@@ -1,0 +1,19 @@
+package com.stars.sbeans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Vehicle {
+
+	
+	@Autowired
+	@Qualifier("cngEngine")
+	private IEngine engine;
+	
+	public void journeyStarted(String startPlace,String endPlace) {
+		System.out.println("journey Started From :"+startPlace);
+		engine.startEngine();
+		System.out.println("Journey Ended At :"+endPlace);
+		engine.stopEngine();
+	}
+}

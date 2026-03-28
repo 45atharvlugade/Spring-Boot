@@ -1,0 +1,23 @@
+package com.stars;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.stars.controller.PayRoleMgmtOperationController;
+
+@SpringBootApplication
+public class BootProject5Application {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx =SpringApplication.run(BootProject5Application.class, args);
+		
+		PayRoleMgmtOperationController pmoc = ctx.getBean("payrole-controller",PayRoleMgmtOperationController.class);
+		
+		// invoke the Buisness method
+		
+		pmoc.showEmployeeByRole("clerk");
+				
+	}
+
+}

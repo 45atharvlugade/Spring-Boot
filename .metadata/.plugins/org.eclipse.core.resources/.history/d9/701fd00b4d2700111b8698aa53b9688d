@@ -1,0 +1,12 @@
+package com.stars.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("adharcard")
+public class AdharCard {
+
+	@Autowired
+	IPerson person;
+	
+}

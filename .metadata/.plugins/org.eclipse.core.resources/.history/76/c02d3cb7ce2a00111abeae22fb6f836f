@@ -1,0 +1,13 @@
+package com.stars.sbeans;
+
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+
+@Data
+@Component("dcc")
+public class DaignosticCentreCatlog {
+	
+	
+
+}

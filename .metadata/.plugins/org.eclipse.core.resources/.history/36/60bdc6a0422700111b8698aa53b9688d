@@ -1,0 +1,31 @@
+package com.stars.config;
+
+import jakarta.annotation.PostConstruct;
+
+public class APerson implements IPerson {
+	
+	private String firstName;
+	private String middleName;
+	private String lastname;
+	private String paddress;
+	private String phone;
+	
+
+	@Override
+	public void assignDetails() {
+
+		
+	}
+
+	@Override
+	public void getDetails() {
+		
+		
+	}
+	
+	@PostConstruct
+	public void myInit() {
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.stars.dao;
+
+import java.util.List;
+
+import com.stars.sbeans.Employee;
+
+public interface IEmployeeDAO {
+
+	public List<Employee> showEmployeeListByRole(String role);
+}

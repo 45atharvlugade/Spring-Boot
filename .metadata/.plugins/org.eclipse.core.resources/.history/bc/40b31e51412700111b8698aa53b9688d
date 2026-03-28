@@ -1,0 +1,20 @@
+package com.stars.config;
+
+public class APerson implements IPerson {
+	
+	private String pName;
+	private String paddress;
+
+	@Override
+	public void assignDetails() {
+		
+		
+	}
+
+	@Override
+	public void getDetails() {
+		
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+spring.application.name=BootProject-4
+
+
+#Data Source cfg
+
+spring.datasource.driver-class-name=
+spring.datasource.url=
+spring.datasource.username=root
+spring.datasource.password=Atharv#@123

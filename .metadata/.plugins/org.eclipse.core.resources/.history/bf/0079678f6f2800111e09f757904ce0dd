@@ -1,0 +1,38 @@
+package com.stars;
+
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.stars.controller.PayRoleMgmtOperationController;
+import com.stars.sbeans.Employee;
+
+@SpringBootApplication
+public class BootProject5Application {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx =SpringApplication.run(BootProject5Application.class, args);
+		
+		PayRoleMgmtOperationController pmoc = ctx.getBean("payrole-controller",PayRoleMgmtOperationController.class);
+		
+		// invoke the Buisness method
+		
+		try {
+			List<Employee> list=pmoc.showEmployeeByRole("Developer");
+			System.out.println("role");
+			list.forEach(emp->{
+				System.out.println(emp);
+			});
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		((ConfigurableApplicationContext) ctx).close();
+				
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.stars.config;
+
+public interface IPerson {
+
+//	public void assignDetails();
+	public void getDetails();
+	
+	
+}

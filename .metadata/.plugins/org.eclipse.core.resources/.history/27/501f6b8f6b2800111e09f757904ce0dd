@@ -1,0 +1,25 @@
+package com.stars.service;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.stars.dao.IEmployeeDAO;
+import com.stars.sbeans.Employee;
+
+@Service("empService")
+public class EmployeeMgmtService implements IEmployeeMgmtService {
+
+	
+	@Override
+	public List<Employee> fetchEmployeeByRole(String role) {
+		
+		role=role.toUpperCase();
+		
+		return null;
+	}
+
+	
+
+}

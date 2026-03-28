@@ -1,0 +1,8 @@
+spring.application.name=BootProject-02
+
+IPerson.person=student
+
+# Assigning the Student Details
+student.fname=Atharv
+student.mName= Raghunath
+student.lName=Lugade

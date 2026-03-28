@@ -1,0 +1,5 @@
+package com.al.raisedexceptions;
+
+public class PhoneAssignError extends Exception {
+
+}

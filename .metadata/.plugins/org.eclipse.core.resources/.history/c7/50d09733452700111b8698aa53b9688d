@@ -1,0 +1,11 @@
+package com.stars.config;
+
+import org.springframework.stereotype.Component;
+
+@Component("student")
+public class Student extends APerson {
+
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+}

@@ -1,0 +1,9 @@
+package com.al.raisedexceptions;
+
+public class PhoneAssignError extends Exception {
+
+	public PhoneAssignError(String msg) {
+		// TODO Auto-generated constructor stub
+		super()
+	}
+}

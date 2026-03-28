@@ -1,0 +1,45 @@
+package com.stars.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.stars.sbeans.Employee;
+
+@Repository("empDAO")
+public class EmployeeDAOImpl implements IEmployeeDAO {
+	
+	@Autowired
+	DataSource ds;
+	
+	
+	private static final String GET_EMP_QUERY="SELECT * FROM EMPLOYEE WHERE ROLE=?";
+
+	@Override
+	public List<Employee> showEmployeeListByRole(String role) {
+		List<Employee> list=null;
+		
+		try(Connection con=ds.getConnection();
+				PreparedStatement ps=con.prepareStatement(GET_EMP_QUERY);
+				
+				){
+			
+			ps.setString(1, role);
+			
+			
+		}catch(SQLException se) {
+			se.printStackTrace();
+			throw se;
+		}catch(Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
+	}
+
+}

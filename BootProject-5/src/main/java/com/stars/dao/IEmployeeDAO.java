@@ -1,0 +1,12 @@
+package com.stars.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.stars.sbeans.Employee;
+
+public interface IEmployeeDAO {
+
+	public List<Employee> showEmployeeListByRole(String role) throws SQLException;
+	
+}

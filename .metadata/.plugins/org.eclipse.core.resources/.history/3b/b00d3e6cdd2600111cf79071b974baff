@@ -1,0 +1,25 @@
+package com.stars.sbeans;
+
+public class PetrolEngine implements IEngine {
+
+	@Override
+	public void startEngine() {
+		// TODO Auto-generated method stub
+		super.startEngine();
+	}
+	
+	@Override
+	public void startEngine() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("PetrolEngine.startEngine()");
+
+	}
+
+	@Override
+	public void stopEngine() {
+		// TODO Auto-generated method stub
+System.out.println("PetrolEngine.stopEngine()");
+	}
+
+}

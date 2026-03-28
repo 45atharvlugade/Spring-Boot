@@ -1,0 +1,20 @@
+package com.stars.sbeans;
+
+import org.springframework.stereotype.Component;
+
+@Component("cngEngine")
+public class CNGEngine implements IEngine {
+
+	@Override
+	public void startEngine() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void stopEngine() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

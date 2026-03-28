@@ -1,0 +1,36 @@
+package com.stars.service;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.stars.dao.IEmployeeDAO;
+import com.stars.sbeans.Employee;
+
+@Service("empService")
+public class EmployeeMgmtService implements IEmployeeMgmtService {
+
+	
+	@Autowired
+	private IEmployeeDAO empDAO;
+	
+	@Override
+	public List<Employee> fetchEmployeeByRole(String role) throws Exception {
+		
+		role=role.toUpperCase();
+		
+		List<Employee> list = empDAO.showEmployeeListByRole(role);
+		
+		list.forEach(emp->{
+			
+			emp.setEmployeeSalary(emp.getEmployeeSalary()+(emp.getEmployeeSalary()*0.4));
+		});
+		
+		return list;
+	}
+
+	
+
+}

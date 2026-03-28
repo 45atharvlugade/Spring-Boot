@@ -1,0 +1,37 @@
+package com.stars.config;
+
+import java.util.Scanner;
+
+public class APerson implements IPerson {
+	
+	private String firstName;
+	private String middleName;
+	private String lastName;
+	private String pAddress;
+	private String phone;
+	
+
+	@Override
+	public void assignDetails() {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter Your First Name");
+		this.firstName=scan.nextLine();
+		System.out.println("Enter Your Last Name");
+		this.lastName=scan.nextLine();
+		System.out.println("Enter Your Middle Name");
+		this.middleName=scan.nextLine();
+		
+	}
+
+	@Override
+	public void getDetails() {
+		System.out.println(firstName);
+		System.out.println(middleName);
+		System.out.println(lastName);
+		System.out.println(pAddress);
+		System.out.println(phone);
+	}
+	
+}

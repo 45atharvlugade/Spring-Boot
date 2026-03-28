@@ -1,0 +1,26 @@
+package com.stars;
+
+import org.springframework.stereotype.Component;
+
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+
+@Component
+@Getter
+@Setter
+@EqualsAndHashCode
+@AllArgsConstructor
+// @NoArgsConstructor
+@RequiredArgsConstructor
+public class Customers {
+
+	private Integer cid;
+	private String cname;
+	private String phone;
+	private String address;
+	
+}

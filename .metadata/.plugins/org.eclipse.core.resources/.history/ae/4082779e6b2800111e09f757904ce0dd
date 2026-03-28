@@ -1,0 +1,30 @@
+package com.stars.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.stars.dao.IEmployeeDAO;
+import com.stars.sbeans.Employee;
+
+@Service("empService")
+public class EmployeeMgmtService implements IEmployeeMgmtService {
+
+	
+	@Autowired
+	private IEmployeeDAO empDAO;
+	
+	@Override
+	public List<Employee> fetchEmployeeByRole(String role) {
+		
+		role=role.toUpperCase();
+		
+		List<Employee> list = empDAO.showEmployeeListByRole(role);
+		
+		return null;
+	}
+
+	
+
+}

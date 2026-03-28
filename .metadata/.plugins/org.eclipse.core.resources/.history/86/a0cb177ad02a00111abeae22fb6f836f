@@ -1,0 +1,31 @@
+package com.stars.sbeans;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+
+@Data
+@Component("pi")
+public class PatientInfo {
+
+	// hard codingthe value
+	@Value("10001")
+	private Integer pid;
+	
+	@Value("${pi.name}")
+	private String pname;
+	
+	@Value("${pi.address}")
+	private String paddress;
+	
+	// Holding the System Properties
+	
+	@Value("${os.name}")
+	private String osName;
+	
+	// Fixed Envoirnment Variable Name.	
+	@Value("${Path}")
+	private String pathData;
+	
+}

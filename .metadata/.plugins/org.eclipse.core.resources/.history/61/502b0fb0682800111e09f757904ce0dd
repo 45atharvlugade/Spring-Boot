@@ -1,0 +1,22 @@
+package com.stars.dao;
+
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.stars.sbeans.Employee;
+
+public class EmployeeDAOImpl implements IEmployeeDAO {
+	
+	@Autowired
+	DataSource ds;
+
+	@Override
+	public List<Employee> showEmployeeListByRole(String role) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

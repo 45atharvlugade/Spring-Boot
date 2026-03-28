@@ -1,0 +1,7 @@
+spring.application.name=MINI_PROJECT_01
+
+#Configuring the DataSource object thorugh the porperties File 
+spring.datasource.driver-class-name=
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=

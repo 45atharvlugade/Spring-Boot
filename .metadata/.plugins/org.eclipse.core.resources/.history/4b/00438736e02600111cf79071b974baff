@@ -1,0 +1,12 @@
+package com.stars.sbeans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Vehicle {
+
+	
+	@Autowired
+	@Qualifier("cngEngine")
+	private IEngine engine;
+}

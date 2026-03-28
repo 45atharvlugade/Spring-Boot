@@ -1,0 +1,36 @@
+package com.stars.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+
+public abstract class APerson implements IPerson {
+	
+	@Value("${student.fname}")
+	protected String firstName;
+	@Value("${student.mName}")
+	protected String middleName;
+	@Value("${student.lName}")
+	protected String lastName;
+	@Value("${student.saddress}")
+	protected String pAddress;
+	@Value("${student.phone}")
+	protected String phone;
+	@Value("${student.age}")
+	protected int age;
+	
+	public APerson() {
+		// TODO Auto-generated constructor stub
+		System.out.println("APerson.APerson()");
+	}
+	
+
+	@Override
+	public void getDetails() {
+		System.out.println(firstName);
+		System.out.println(middleName);
+		System.out.println(lastName);
+		System.out.println(pAddress);
+		System.out.println(phone);
+	}
+	
+}

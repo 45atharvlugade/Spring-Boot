@@ -1,0 +1,11 @@
+package com.stars.sbeans;
+
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+
+@Data
+@Component("patientInfo")
+public class PatientInfo {
+
+}

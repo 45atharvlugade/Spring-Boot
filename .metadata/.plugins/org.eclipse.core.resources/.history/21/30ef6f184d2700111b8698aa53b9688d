@@ -1,0 +1,27 @@
+package com.stars.config;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("adharcard")
+public class AdharCard {
+
+	@Autowired
+	IPerson person;
+	
+	public void printAdharCard() {
+		try(
+				
+				){
+			
+		}catch(FileNotFoundException fnfe) {
+			fnfe.printStackTrace();
+		}
+	}
+	
+	
+}

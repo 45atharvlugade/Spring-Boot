@@ -1,0 +1,24 @@
+package com.stars;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ImportResource;
+import org.springframework.context.annotation.ImportRuntimeHints;
+
+import com.stars.sbeans.CNGEngine;
+import com.stars.sbeans.Vehicle;
+
+@SpringBootApplication
+@ImportResource("/BootProject-01/src/main/resources/applicationContext.xml")
+public class BootProject01Application {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx  =SpringApplication.run(BootProject01Application.class, args);
+		
+		Vehicle vehicle=ctx.getBean("vehicle",Vehicle.class);
+		
+		vehicle.journeyStarted("mumbai", "pune");
+	}
+
+}

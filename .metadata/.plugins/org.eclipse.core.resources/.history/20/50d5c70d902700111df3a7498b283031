@@ -1,0 +1,5 @@
+package com.stars.models;
+
+public class Employee {
+
+}

@@ -1,0 +1,9 @@
+package com.al.sbeans;
+
+public class Customer {
+
+	
+	private String cname;
+	private Integer cid;
+	private String address;
+}

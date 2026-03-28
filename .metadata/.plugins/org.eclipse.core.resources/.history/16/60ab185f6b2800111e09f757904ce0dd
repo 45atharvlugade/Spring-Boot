@@ -1,0 +1,13 @@
+package com.stars.service;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.stars.dao.IEmployeeDAO;
+import com.stars.sbeans.Employee;
+
+public class EmployeeMgmtService implements IEmployeeMgmtService {
+
+	
+
+}

@@ -1,0 +1,6 @@
+package com.stars.config;
+
+public interface ICourse {
+public void showCourseStartDate();
+public void showCourseDetails();
+}

@@ -1,0 +1,10 @@
+package com.stars.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class AdharCard {
+
+	@Autowired
+	IPerson person;
+	
+}
