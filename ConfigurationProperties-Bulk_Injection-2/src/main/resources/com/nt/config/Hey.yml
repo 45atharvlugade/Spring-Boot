@@ -1,0 +1,13 @@
+spring:
+ datasource:
+   url: bfgfei
+   user-name: dwdew
+   password: uheeh
+   driver-class-name: dewddewq
+   type: ;iu3egf3f 
+   
+ c3p0:
+  minsize: 27282
+  maxsize: 62721898
+    
+   

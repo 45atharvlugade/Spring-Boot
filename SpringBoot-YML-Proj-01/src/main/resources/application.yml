@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: SpringBoot-YML-Proj-01			
+  config:
+    import: HospitalInfo.yml
+
+
+patient:
+ info:
+  patientId: 894948
+  patientMobileNumber: 99889995
+  totalBillAmount: 8903.09
+  patientName: Atharv Raghunath Lugade
+  list:
+  - 99884
+  - 84874
+  - 93032
+  - 63732 
+  mapus:
+   a: 3934
+   b: 7282
+   c: 7273
+   d: 3637
+
